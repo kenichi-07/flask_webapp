@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 
 # Replace 'username', 'password', 'your-aurora-endpoint', and 'your-database' with your actual RDS credentials and details.
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://username:password@your-aurora-endpoint:5432/your-database'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://postgres_admin:123456789@flaskappdatabase.cluster-crcewgieknm7.us-east-1.rds.amazonaws.com:5432/flaskappdatabase'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
